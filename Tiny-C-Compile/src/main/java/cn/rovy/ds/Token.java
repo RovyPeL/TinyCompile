@@ -14,10 +14,10 @@ public class Token {
 
     @Override
     public String toString() {
-        return "Token{" +
+        return "Token[" +
                 "type=" + type +
                 ", value='" + value + '\'' +
                 ", num=" + num +
-                '}' + '\n';
+                ']' + '\n';
     }
 }

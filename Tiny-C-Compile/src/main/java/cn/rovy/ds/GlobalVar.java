@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Data
 public class GlobalVar {
@@ -18,9 +19,10 @@ public class GlobalVar {
 
     /*语法分析与语义分析*/
     private Node rootNode;
+    private Map<String, Func> funcsMap;//函数表
 
     /*中间代码生成与优化*/
-
+    private List<FourItem> fourItemList;
 
     /*生成汇编代码*/
 
@@ -31,6 +33,7 @@ public class GlobalVar {
         tokens = new ArrayList<>();
         tokenLineNum = new ArrayList<>();
         rootNode = new Node("root", null);
+        fourItemList = new ArrayList<>();
     }
 
     public static GlobalVar getInstance(){

@@ -18,8 +18,8 @@ public class TokenAnalysis {
     ));
     private static final List<String> symbolList = new ArrayList<>(Arrays.asList(
             "{", "}", "(", ")", ",", ";", "+", "-", "*", "/", "%", "\"", "'",
-            "&", "|", "^", "<", ">", "=", "<=", ">=", "!=", "==", "&&", "||",
-            "~", "!", "++", "--"
+            "&", "|", "<", ">", "=", "<=", ">=", "!=", "==", "&&", "||", "!",
+            "++", "--"
     ));
     private static List<String> identifierList = new ArrayList<>();
     private static List<String> constantList = new ArrayList<>();
